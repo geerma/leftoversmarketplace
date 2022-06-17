@@ -1,0 +1,99 @@
+.header_container {
+  display: flex;
+  align-items: center;
+
+  padding: 1.5rem 8rem;
+  flex-direction: row;
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 25% 31%,
+    #fff0e7 0%,
+    #ffede2 38%,
+    #ffe4d5 59%,
+    #ffddc9 91%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 25% 31%,
+    #fff0e7 0%,
+    #ffede2 38%,
+    #ffe4d5 59%,
+    #ffddc9 91%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 25% 31%,
+    #fff0e7 0%,
+    #ffede2 38%,
+    #ffe4d5 59%,
+    #ffddc9 91%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 25% 31%,
+    #fff0e7 0%,
+    #ffede2 38%,
+    #ffe4d5 59%,
+    #ffddc9 91%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 25% 31%,
+    #fff0e7 0%,
+    #ffede2 38%,
+    #ffe4d5 59%,
+    #ffddc9 91%
+  );
+}
+
+.header_container header {
+  font-family: Arial;
+  padding: 0.5rem 1rem;
+}
+
+.header_links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header_sign {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_links button {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0.1rem 0.2rem;
+  cursor: pointer;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  background: white;
+}
+
+.header_sign button {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0.1rem 0.2rem;
+  cursor: pointer;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  background: white;
+}
