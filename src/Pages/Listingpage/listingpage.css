@@ -1,0 +1,19 @@
+.listing_container {
+    background: #B6D1B1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.listing_inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 1rem;
+}
+
+.listing_inputs input {
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}

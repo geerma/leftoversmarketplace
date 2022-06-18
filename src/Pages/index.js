@@ -1,4 +1,5 @@
 export { default as Homepage } from './Homepage/Homepage.jsx'
-export { default as Leftoverspage } from './Leftoverspage/Leftoverspage.jsx'
+export { default as Searchpage } from './Searchpage/Searchpage.jsx'
+export { default as Listingpage } from './Listingpage/Listingpage.jsx'
 export { default as Profilepage } from './Profilepage/Profilepage.jsx'
 export { default as Welcomepage } from './Welcomepage/Welcomepage.jsx'

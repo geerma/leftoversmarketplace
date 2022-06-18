@@ -4,20 +4,20 @@ import "./header.css";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const navgiate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="header_container">
       <header>Leftovers Marketplace</header>
       <div className="header_links">
-        <button onClick={() => navgiate("/")}>Welcome</button>
-        <button onClick={() => navgiate("/homepage")}>Home</button>
-        <button onClick={() => navgiate("/leftoverspage")}>Leftovers</button>
-        <button onClick={() => navgiate("/profilepage")}>Profile</button>
+        <button onClick={() => navigate("/")}>Welcome</button>
+        <button onClick={() => navigate("/homepage")}>Home</button>
+        <button onClick={() => navigate("/searchpage")}>Search</button>
+        <button onClick={() => navigate("/profilepage")}>Profile</button>
       </div>
       <div className="header_sign">
-        <button onClick={() => navgiate("/")}>Sign In</button>
-        <button onClick={() => navgiate("/homepage")}>Sign Out</button>
+        <button onClick={() => navigate("/")}>Sign In</button>
+        <button onClick={() => navigate("/homepage")}>Sign Out</button>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const Welcomepage = () => {
   });
 
   return (
-    <div>
+    <div className="welcome_container">
       <div>
         <Header />
       </div>

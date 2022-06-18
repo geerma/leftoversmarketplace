@@ -5,7 +5,7 @@ import { Header } from "../../Components";
 
 const Profilepage = () => {
   return (
-    <div>
+    <div className="profile_container">
       <div>
         <Header />
       </div>

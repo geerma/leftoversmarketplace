@@ -1,0 +1,14 @@
+.homepage_container {
+  background: #b6d1b1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.homepage_container button {
+  background: #cccccc;
+  border-radius: 30px;
+  padding: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 82vw;
+}
