@@ -43,7 +43,7 @@ img {
   z-index: 1;
   width: 250px;
   margin-top: 68rem;
-  margin-left: 19rem;
+  margin-left: 18rem;
 }
 
 /*Tomato*/
@@ -56,6 +56,6 @@ img:nth-child(2) {
 /*Lettuce*/
 img:nth-child(3) {
   width: 300px;
-  margin-top: 50rem;
-  margin-left: 55rem;
+  margin-top: 46rem;
+  margin-left: 57rem;
 }
