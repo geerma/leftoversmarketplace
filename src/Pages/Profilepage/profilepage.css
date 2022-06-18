@@ -133,3 +133,15 @@
   flex-wrap: wrap;
   margin-top: 6rem;
 }
+
+.transaction_history,
+.sold_history {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+
+  position: relative;
+  z-index: 2;
+}
