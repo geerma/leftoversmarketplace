@@ -6,11 +6,10 @@ const connectDB= require('./config/db')
 require('dotenv').config()
 
 connectDB()
+
 const app = express()
 
-
-
-const port = process.env.PORT||8090
+const port = process.env.PORT||8095
 
 app.use(cors())
 app.use(express.json())
