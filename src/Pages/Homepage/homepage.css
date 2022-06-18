@@ -1,14 +1,61 @@
 .homepage_container {
   background: #b6d1b1;
-  width: 100vw;
-  height: 100vh;
 }
 
-.homepage_container button {
+.homepage_container h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 4rem;
+
+  position: relative;
+  z-index: 3;
+}
+
+.list_button button {
   background: #cccccc;
   border-radius: 30px;
   padding: 1rem;
   display: flex;
-  margin-top: 2rem;
-  margin-left: 82vw;
+  flex-direction: row;
+  margin-top: 1.5rem;
+  margin-left: 75vw;
+}
+
+.recently_listed_container,
+.closest_container,
+.fresh_produce_container,
+.pantry_friendly_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+
+  position: relative;
+  z-index: 2;
+}
+
+/*Bread*/
+img {
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  width: 250px;
+  margin-top: 68rem;
+  margin-left: 19rem;
+}
+
+/*Tomato*/
+img:nth-child(2) {
+  width: 220px;
+  margin-top: 25rem;
+  margin-left: 15rem;
+}
+
+/*Lettuce*/
+img:nth-child(3) {
+  width: 300px;
+  margin-top: 50rem;
+  margin-left: 55rem;
 }

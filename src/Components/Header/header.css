@@ -5,7 +5,7 @@
   padding: 1.5rem 8rem;
   flex-direction: row;
 
-  background: #C8C8C8 !important;
+  background: rgba(200, 200, 200, 0.69) !important;
 
   /* ff 3.6+ */
   background: -moz-radial-gradient(
@@ -71,7 +71,7 @@
   justify-content: flex-end;
 }
 
-.header_links button {
+.header_links button  {
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-size: 16px;
@@ -99,4 +99,11 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   background: white;
+}
+
+@media screen and (max-width: 950px) {
+  .header_container {
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+  }
 }
