@@ -10,7 +10,7 @@ connectDB()
 const app = express()
 
 
-app.use('/api/users',require('./routes/userRoutes'))
+app.use('/api',require('./routes/routes'))
 
 const port = process.env.PORT||8090
 
