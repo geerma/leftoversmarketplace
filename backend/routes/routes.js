@@ -25,8 +25,10 @@ router.post('/users/register',registerUser)
 
 
 
-//Item Controller
 
+const{getAllItems}=require('../controllers/itemController')
+// Item Controller
+router.post('/items/getAllItems',getAllItems)
 
 
 
