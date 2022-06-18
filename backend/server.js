@@ -3,7 +3,6 @@ const colors = require('colors')
 const cors = require('cors')
 const connectDB= require('./config/db')
 
-
 require('dotenv').config()
 
 connectDB()
