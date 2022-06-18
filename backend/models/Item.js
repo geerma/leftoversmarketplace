@@ -5,10 +5,10 @@ const Schema=mongoose.Schema;
 const ItemSchema = new mongoose.Schema({
     price:{type: String, default:"0.0"},
     expirationDate: {type:Date, default:Date.now},
-    name: {type: String},
+    nameOfItem: {type: String},
     description: {type: String},
-    Ingredients_and_allergens: {type: String},
-    ItemCreationDate: {type:Date, default:Date.now},
+    ingredients_allergens: {type: String},
+    itemCreationDate: {type:Date, default:Date.now},
 });
 
 let Item=mongoose.model("Item", ItemSchema)
