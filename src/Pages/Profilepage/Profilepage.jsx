@@ -88,7 +88,16 @@ const TransactionHistory = () => {
         ))}
         ;
       </div>
-      <div className="sold_history"></div>
+      <div className="sold_history">
+      {transaction.map((item, index) => (
+          <TransactionListing
+            image={item.image}
+            item_name={item.item_name}
+            key={item.text + index}
+          />
+        ))}
+        ;
+      </div>
     </div>
   );
 };
