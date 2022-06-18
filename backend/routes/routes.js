@@ -4,28 +4,29 @@ const { getAllUsers,getUser,createUser,editUser,deleteUser,loginUser,getMe,regis
 
 
 //user Controller
-router.get('/users/getAllUsers', getAllUsers)
 router.get('/users/getUser', getUser)
 // router.post('/users/create',createUser )
 router.put('/users/:id',editUser)
 router.delete('/users/delete/:id',deleteUser)
+
+
+
+
+///---------------Endpoints below is tested------------------------------------------------------
+//registerUser is done, tested in postman, reques bdy should contains:
+//username, email, password
+router.get('/users/getAllUsers', getAllUsers)
+router.post('/users/register',registerUser)
 router.post('/users/login',loginUser)
 router.get('/users/me',getMe)
 
 
 
-
-//registerUser is done, tested in postman, reques bdy should contains:
-//username, email, password
-router.post('/users/register',registerUser)
-
-
-
-
-
-
-
-//Item Controller
+const{getAllItems,uploadItem,deleteItem}=require('../controllers/itemController')
+// Item Controller
+router.get('/items/getAllItems',getAllItems)
+router.post('/items/uploadItem',uploadItem)
+router.delete('/items/deleteItem',deleteItem)
 
 
 
