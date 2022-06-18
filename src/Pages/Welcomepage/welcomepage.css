@@ -1,7 +1,48 @@
 .welcome_container {
   background: #b6d1b1;
+  background-image: url("../../Assets/bgimg.png");
+  background-size:100%;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  margin: auto;
+}
+
+.login_register_container {
+  text-align: center;
+  font-size: 64px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.login_container {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+  margin: 2rem;
+}
+
+.login_container input {
+  background: white;
+  border-radius: 10px;
+  border-color: white;
+  font-size: 32px;
+
+  margin: 2rem;
+}
+
+.login_container button {
+  background: #656565;
+  border-radius: 30px;
+  border-color: #656565;
+  color: white;
+  font-size: 32px;
+
+  margin: 1rem;
 }
 
 .login_container {
