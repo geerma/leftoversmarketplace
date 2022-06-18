@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./profilepage.css";
 
-import { Header } from "../../Components";
+import { Header, TransactionListing } from "../../Components";
 import profileImage from "../../Assets/Profile/Profile.png";
 import profileImageLarge from "../../Assets/Profile/ProfileLarge.png";
 import chatImage from "../../Assets/Profile/Chat.png";
@@ -10,6 +10,25 @@ import exitImage from "../../Assets/Profile/Exit.png";
 import settingsImage from "../../Assets/Profile/Settings.png";
 
 const Profile = () => {
+  const [sold, setSold] = useState([
+    {
+      image: "Image",
+      item_name: "Text1",
+    },
+    {
+      image: "Image",
+      item_name: "Text2",
+    },
+    {
+      image: "Image",
+      item_name: "Text3",
+    },
+    {
+      image: "Image",
+      item_name: "Text4",
+    },
+  ]);
+
   return (
     <div className="profile_menu">
       <h1>Profile</h1>
@@ -37,9 +56,39 @@ const Chats = () => {
 };
 
 const TransactionHistory = () => {
+  const [transaction, setTransaction] = useState([
+    {
+      image: "Image",
+      item_name: "Transaction 1",
+    },
+    {
+      image: "Image",
+      item_name: "Transaction 2",
+    },
+    {
+      image: "Image",
+      item_name: "Transaction 3",
+    },
+    {
+      image: "Image",
+      item_name: "Transaction 4",
+    },
+  ]);
+
   return (
     <div>
       <h1>Transaction History</h1>
+      <div className="transaction_history">
+        {transaction.map((item, index) => (
+          <TransactionListing
+            image={item.image}
+            item_name={item.item_name}
+            key={item.text + index}
+          />
+        ))}
+        ;
+      </div>
+      <div className="sold_history"></div>
     </div>
   );
 };
