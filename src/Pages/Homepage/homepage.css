@@ -37,7 +37,7 @@
 }
 
 /*Bread*/
-img {
+.homepage_container img {
   position: absolute;
   text-align: left;
   z-index: 1;
@@ -47,14 +47,14 @@ img {
 }
 
 /*Tomato*/
-img:nth-child(2) {
+.homepage_container img:nth-child(2) {
   width: 220px;
   margin-top: 25rem;
   margin-left: 15rem;
 }
 
 /*Lettuce*/
-img:nth-child(3) {
+.homepage_container img:nth-child(3) {
   width: 300px;
   margin-top: 46rem;
   margin-left: 57rem;

@@ -55,35 +55,81 @@
 .profile_icons {
   border: 1px solid black;
   flex: 1;
-  min-height: 28rem;
-  height: 50vh;
-  width: 15%;
-  min-width: 125px;
-  
-  display:flex;
+  min-height: 26rem;
+  height: 40rem;
+  width: 160px;
+  min-width: 120px;
+  margin: 1rem;
+
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .profile_icons button {
-  margin: 0;
-  padding: 2rem;
-  background-color:transparent;
+  margin-top: 0rem;
+  padding: 1rem;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.profile_icons button:hover {
+  background-color: white;
 }
 
 .profile_icons img {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  width: 100px;
-  color: black;
+  width: 75px;
+  height: 75px;
 }
 
 .profile_info {
   border: 1px solid black;
   height: 50vh;
-  width: 85%;
+  width: 88%;
   min-width: 200px;
+  margin: 1rem;
+  min-height: 26rem;
+  height: 40rem;
+  margin: 1rem;
 }
 
+.profile_info h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+
+  color: #000000;
+
+  margin-left: 4rem;
+}
+
+/* Right side of Profile */
+.profile_menu img {
+  width: 150px;
+  height: 150px;
+  margin-left: 2rem;
+}
+
+.profile_menu_container {
+  display: flex;
+}
+
+.profile_top_text {
+  text-align: center;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_top_text h3 {
+  margin-left: 24rem;
+}
+
+.profile_bottom_text {
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
