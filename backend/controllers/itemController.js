@@ -48,7 +48,19 @@ const uploadItem=asyncHandler( async (req,res)=>{
 })
 
 
+const deleteItem=asyncHandler( async (req,res)=>{
+    const {nameOfItem} = req.body
+    const item= await Item.findOneAndDelete({nameOfItem})
+    if(item){
+        res.status(200).json({message: "deletion completed"})
+    }else{
+        res.status(400)
+        throw new Error('Invalid deletion')
+    }
+})
+
+
 
 module.exports={
-    getAllItems,uploadItem
+    getAllItems,uploadItem,deleteItem
 }

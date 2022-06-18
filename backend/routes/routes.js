@@ -22,10 +22,11 @@ router.get('/users/me',getMe)
 
 
 
-const{getAllItems,uploadItem}=require('../controllers/itemController')
+const{getAllItems,uploadItem,deleteItem}=require('../controllers/itemController')
 // Item Controller
 router.get('/items/getAllItems',getAllItems)
 router.post('/items/uploadItem',uploadItem)
+router.delete('/items/deleteItem',deleteItem)
 
 
 
