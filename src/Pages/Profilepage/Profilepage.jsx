@@ -9,7 +9,14 @@ const Profilepage = () => {
       <div>
         <Header />
       </div>
-      Profile page
+      <div className="profile_box">
+      <div className="profile_icons">
+
+      </div>
+      <div className="profile_info">
+
+      </div>
+      </div>
     </div>
   );
 };

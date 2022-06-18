@@ -1,6 +1,69 @@
 .profile_container {
-    background: #b6d1b1;
-    width: 100vw;
-    height: 100vh;
-  }
-  
+  width: 100vw;
+  height: 100vh;
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    ellipse at 23% 9%,
+    rgba(186, 197, 184, 1) 0%,
+    rgba(173, 190, 170, 1) 48%,
+    rgba(162, 187, 157, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    ellipse at 23% 9%,
+    rgba(186, 197, 184, 1) 0%,
+    rgba(173, 190, 170, 1) 48%,
+    rgba(162, 187, 157, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    ellipse at 23% 9%,
+    rgba(186, 197, 184, 1) 0%,
+    rgba(173, 190, 170, 1) 48%,
+    rgba(162, 187, 157, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    ellipse at 23% 9%,
+    rgba(186, 197, 184, 1) 0%,
+    rgba(173, 190, 170, 1) 48%,
+    rgba(162, 187, 157, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    ellipse at 23% 9%,
+    rgba(186, 197, 184, 1) 0%,
+    rgba(173, 190, 170, 1) 48%,
+    rgba(162, 187, 157, 1) 100%
+  );
+}
+
+.profile_box {
+  border: 1px solid black;
+  margin: 5rem 10rem 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  min-width: 350px;
+}
+
+.profile_icons {
+  border: 1px solid black;
+  flex: 1;
+  height: 50vh;
+  width: 15%;
+  min-width: 125px;
+}
+
+.profile_info {
+  border: 1px solid black;
+  height: 50vh;
+  width: 85%;
+  min-width: 200px;
+}
+

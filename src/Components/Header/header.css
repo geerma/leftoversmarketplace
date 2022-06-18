@@ -5,6 +5,8 @@
   padding: 1.5rem 8rem;
   flex-direction: row;
 
+  background: #C8C8C8 !important;
+
   /* ff 3.6+ */
   background: -moz-radial-gradient(
     circle at 25% 31%,
@@ -50,6 +52,7 @@
     #ffddc9 91%
   );
 }
+
 
 .header_container header {
   font-family: Arial;
