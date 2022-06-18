@@ -88,7 +88,7 @@ const getMe= asyncHandler(async (req,res)=>{
 const registerUser=asyncHandler( async (req,res)=>{
     const {username, email,password,firstName,lastName} = req.body
 
-    if (!username||!email||!password||!firstName||!lastName){
+    if (!username||!email||!password){
         res.status(400)
         throw new Error('please add all three fields')
     }

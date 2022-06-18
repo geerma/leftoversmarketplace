@@ -16,7 +16,7 @@ router.get('/users/me',getMe)
 
 
 //registerUser is done, tested in postman, reques bdy should contains:
-//username, email, password, firstName and lastName
+//username, email, password
 router.post('/users/register',registerUser)
 
 
