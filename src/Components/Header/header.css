@@ -2,10 +2,12 @@
   display: flex;
   align-items: center;
 
-  padding: 1.5rem 8rem;
+  padding: 1rem 4rem;
   flex-direction: row;
 
   background: rgba(200, 200, 200, 0.69) !important;
+
+  font-size: 42px;
 
   /* ff 3.6+ */
   background: -moz-radial-gradient(
@@ -69,14 +71,15 @@
   flex: 2;
   display: flex;
   justify-content: flex-end;
+
 }
 
 .header_links button  {
   padding: 0.5rem 1rem;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 18px;
-  border-radius: 5px;
+  border-radius: 30px;
   border: 0;
   margin: 0.1rem 0.2rem;
   cursor: pointer;
@@ -88,17 +91,18 @@
 
 .header_sign button {
   padding: 0.5rem 1rem;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
+  color: white;
   line-height: 18px;
-  border-radius: 5px;
   border: 0;
   margin: 0.1rem 0.2rem;
   cursor: pointer;
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-  background: white;
+  
+  background: #FF5F5F;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 950px) {
