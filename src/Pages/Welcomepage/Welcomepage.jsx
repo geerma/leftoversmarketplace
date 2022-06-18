@@ -23,7 +23,7 @@ const Welcomepage = () => {
       <div className="login_register_container">
         {registering ? (
           <div className="register_container">
-            Registering
+            Registration
             <input
               type="username"
               placeholder="Username"
