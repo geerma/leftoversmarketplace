@@ -20,14 +20,6 @@ const Welcomepage = () => {
 
 background: #DEFF97;
 
-  <style>
-     .rectangle {
-        width: 1448.04px;
-        height: 465px;
-        left: -5.03px;
-        top: -39.5px;
-
-background: #DEFF97;
 }
   return (
     <div className="welcome_container">
