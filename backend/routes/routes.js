@@ -25,7 +25,7 @@ router.post('/users/register',registerUser)
 
 
 
-//Post Controller
+//Item Controller
 
 
 
