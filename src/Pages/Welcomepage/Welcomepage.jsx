@@ -3,9 +3,6 @@ import "./welcomepage.css";
 
 import { Header } from "../../Components";
 import { useState } from "react";
-import tomato from "../../Assets/tomato.png";
-import bread from "../../Assets/bread.png";
-import lettuce from "../../Assets/lettuce.png";
 
 const Welcomepage = () => {
   const [registering, setRegistering] = useState(false);
@@ -16,11 +13,7 @@ const Welcomepage = () => {
     email: "",
     password: "",
   });
-  
 
-background: #DEFF97;
-
-}
   return (
     <div className="welcome_container">
       <div>
