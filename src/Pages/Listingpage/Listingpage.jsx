@@ -1,5 +1,5 @@
-import React from 'react'
-import './listingpage.css'
+import React from "react";
+import "./listingpage.css";
 import { Header } from "../../Components";
 
 const Listingpage = () => {
@@ -10,24 +10,27 @@ const Listingpage = () => {
       </div>
       <h1>List an Item</h1>
       <div className="listing_inputs">
-        <label>Price</label>
-        <input ></input>
+        <form className="listing_inputs">
+          <label>Price</label>
+          <input />
 
-        <label>Expiration Date</label>
-        <input/>
+          <label>Expiration Date</label>
+          <input />
 
-        <label >Name of Item</label>
-        <input />
-        
-        <label >Description</label>
-        <input />
-        <label>Major Allergens</label>
-        <input />
-        <button type="submit">Submit</button>
+          <label>Name of Item</label>
+          <input />
+
+          <label>Description</label>
+          <input />
+          <label>Major Allergens</label>
+          <input />
+          <label>Upload a Picture</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   );
 };
 
-
-export default Listingpage
+export default Listingpage;

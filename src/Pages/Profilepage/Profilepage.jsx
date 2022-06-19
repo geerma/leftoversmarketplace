@@ -36,11 +36,11 @@ const Profile = () => {
       <div className="profile_menu_container">
         <img src={profileImageLarge} alt="profileimg" />
         <div className="profile_top_text">
-          <h2>Name</h2>
+          <h2>August Young</h2>
           <h3>4.8 Stars</h3>
         </div>
         <div className="profile_bottom_text">
-          <p>Based in Location</p>
+          <p>Based in California</p>
         </div>
       </div>
     </div>
