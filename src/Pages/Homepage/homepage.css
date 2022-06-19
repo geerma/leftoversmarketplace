@@ -34,7 +34,24 @@
 
   position: relative;
   z-index: 2;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
+
+.pantry_friendly_container::-webkit-scrollbar {
+  display: none;
+}
+ 
+.fresh_produce_container::-webkit-scrollbar {
+  display: none;
+}
+.closest_container::-webkit-scrollbar {
+  display: none;
+}
+.recently_listed_container::-webkit-scrollbar {
+  display: none;
+}
+
 
 /*Bread*/
 .homepage_container img {
