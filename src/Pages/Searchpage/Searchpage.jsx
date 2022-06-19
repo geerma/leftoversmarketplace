@@ -3,6 +3,7 @@ import "./searchpage.css";
 
 import { Header } from "../../Components";
 import { useState } from "react";
+import {girl} from "../../Assets/searchGirl.png"
 
 const FilterComponent = () => {
   return (
@@ -10,7 +11,7 @@ const FilterComponent = () => {
       <p>Toggled Filter</p>
       <input type="range" min="5" max="50" value="10" class="slider" id="price" />
       <input type="checkbox"></input>
-      <label>Asian</label>
+      <label>Meals</label>
       <input type="checkbox"></input>
       <label>Baked Goods</label>
       <input type="checkbox"></input>
@@ -35,11 +36,14 @@ const Searchpage = () => {
       </div>
       <div className="search_inner_container">
         <h4>Looking for something?</h4>
-        <input placeholder="Search here" />
-        <button onClick={() => setFilter((filterToggle) => !filterToggle)}>
-          Filter
-        </button>
-        {filter && <FilterComponent />}
+        <div className="search_inner_functions">
+          <input placeholder="Search here" />
+          <button onClick={() => setFilter((filterToggle) => !filterToggle)}>
+            Filter
+          </button>
+          {filter && <FilterComponent />}
+        </div>
+        
       </div>
     </div>
   );

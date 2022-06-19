@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <div className="header_sign">
         <button onClick={() => navigate("/")}>Sign In</button>
-        <button onClick={() => navigate("/homepage")}>Sign Out</button>
+        <button onClick={() => navigate("/")}>Sign Out</button>
       </div>
     </div>
   );
