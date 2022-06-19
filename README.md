@@ -5,7 +5,9 @@ Welcome to Leftover Marketplace. This is our project for WaffleHacks 2022.
 ## Links
 
 [Presentation and Demo Video](https://www.youtube.com/watch?v=rqwe0tU2Bxk&t=2s)
-[Website](http://leftoversmarketplace.vercel.app)
+
+[Website Link](http://leftoversmarketplace.vercel.app)
+
 [Figma](https://www.figma.com/proto/KzBJI5KVgSs5lJvB1Guhx3/Left-Overs?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A2)
 
 ## How to Run
