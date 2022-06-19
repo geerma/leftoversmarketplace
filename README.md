@@ -2,69 +2,36 @@
 
 Welcome to Leftover Marketplace. This is our project for Waffle Hacks 2022.
 
-## Available Scripts
+## How to Run
+Type in npm install, and install any necessaries dependencies such as React and react-router-dom. Then type 'npm start' in the terminal.
 
-In the project directory, you can run:
+## Inspiration
 
-### `npm start`
+In the United States of America, around 30-40% of all food is said to be wasted. 43% of this waste comes from homes, and 40% comes from restaurants. Even before COVID, millions of people in America suffered from food insecurity. Now, combined with difficulties in finding employment, students in particular face immense financial hardships. Our project focuses on helping students who require additional assistance in obtaining cheap meals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What it does
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our project, The Leftovers Marketplace, allows vendors to list food for others to see. These vendors can be anyone who has leftover meals, and even excess groceries and pantry foods. The vendors can also be restaurants, bakeries, cafes, and other establishments that want to list their food for external consumption. For safety purposes, these vendors must be verified using legal documentation, and there is also a report function. 
 
-### `npm test`
+Students in need, or the ‘buyers’, can contact sellers to organize payment and pick up of food. Sellers can list items along with a description of ingredients and allergens for others to more easily sift through foods that suit their needs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How we built it
 
-### `npm run build`
+We created a design using Figma, which was used in the creation of our Front-End, which was done via React (along with HTML, CSS, and JavaScript). The bank-end was created using MongoDB.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges we ran into
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The major challenge that we encountered was combining the front-end with the back-end, which was MongoDB. Although we could get both of them working together individually, we could not make them work together after deploying on Vercel and Netlify. Another challenge was the fact that most of us were beginners and this was some of our member’s first hackathon, so we could not implement some of the features that we wanted to.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Accomplishments that we're proud of
 
-### `npm run eject`
+However, despite it being some of our team member's first hackathon experience, we thought we worked together very well and managed to create a project we were proud of. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What we learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We learned how to transfer Figma design styles to a React Front-end. We also paid attention to clean code and file structure, which saved a lot of time because we had pages, a different CSS file for each page, components, and a different CSS file for each component. This helped in terms of accessibility, and also having multiple members working on the project at the same time. We also learned more about React and MongoDB.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## What's next for Leftovers Marketplace
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There are many features that we had for our project that we were not able to implement. Mainly connecting the front-end with a functional back-end is the biggest one. We would also like to implement Google Maps API for location searching and SocketIO for the chat functionality. In addition, we wanted to create a marketplace where users can sell art/music, and then vendors who donate leftovers can receive points which will work towards a discount.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
