@@ -11,15 +11,18 @@ const Listingpage = () => {
       <h1>List an Item</h1>
       <div className="listing_inputs">
         <label>Price</label>
-        <input />
+        <input ></input>
+
         <label>Expiration Date</label>
-        <input />
+        <input/>
+
         <label >Name of Item</label>
-        <input placeholder="What are you listing"/>
+        <input />
+        
         <label >Description</label>
-        <input placeholder="Describe the item"/>
-        <label>Ingredients & Allergens</label>
-        <input placeholder="Please indicate if item contains nuts, dairy, gluten, etc."/>
+        <input />
+        <label>Major Allergens</label>
+        <input />
         <button type="submit">Submit</button>
       </div>
     </div>

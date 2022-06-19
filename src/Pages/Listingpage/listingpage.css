@@ -4,16 +4,50 @@
     height: 100vh;
 }
 
+.listing_container h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 4rem;
+  
+    position: relative;
+    z-index: 3;
+  }
+
 .listing_inputs {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     flex-direction: column;
 
-    margin: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .listing_inputs input {
     margin-top: 0.25rem;
     margin-bottom: 0.75rem;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 18px;
+    padding: 8px;
+}
+
+.listing_inputs button {
+    background: #DEFF97;
+    border: 1px solid #000000;
+    border-radius: 30px;
+
+    padding: 1%;
+
+    margin-top: 3%;
+
+    cursor: pointer;
+}
+
+input, label {
+    display: block;
 }
