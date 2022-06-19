@@ -6,7 +6,6 @@ import profileImage from "../../Assets/Profile/Profile.png";
 import profileImageLarge from "../../Assets/Profile/ProfileLarge.png";
 import chatImage from "../../Assets/Profile/Chat.png";
 import historyImage from "../../Assets/Profile/History.png";
-import exitImage from "../../Assets/Profile/Exit.png";
 import settingsImage from "../../Assets/Profile/Settings.png";
 
 const Profile = () => {
@@ -102,14 +101,6 @@ const TransactionHistory = () => {
   );
 };
 
-const Exit = () => {
-  return (
-    <div>
-      <h1>Exit</h1>
-    </div>
-  );
-};
-
 const Settings = () => {
   return (
     <div>
@@ -137,9 +128,6 @@ const Profilepage = () => {
           <button onClick={() => setProfileMenu("History")}>
             <img src={historyImage} alt="historyimg" />
           </button>
-          <button onClick={() => setProfileMenu("Exit")}>
-            <img src={exitImage} alt="exitimg" />
-          </button>
           <button onClick={() => setProfileMenu("Settings")}>
             <img src={settingsImage} alt="settingsimg" />
           </button>
@@ -149,9 +137,7 @@ const Profilepage = () => {
             <Chats />
           ) : profileMenu === "History" ? (
             <TransactionHistory />
-          ) : profileMenu === "Exit" ? (
-            <Exit />
-          ) : profileMenu === "Settings" ? (
+          )  : profileMenu === "Settings" ? (
             <Settings />
           ) : (
             <Profile />

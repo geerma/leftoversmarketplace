@@ -1,6 +1,6 @@
 .profile_container {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
 
   /* ff 3.6+ */
   background: -moz-radial-gradient(
@@ -45,18 +45,20 @@
 
 .profile_box {
   border: 1px solid black;
+  border-radius: 20px;
   margin: 2rem 9rem 9rem;
   padding: 1rem;
   display: flex;
   flex-direction: row;
   min-width: 1050px;
   background: white;
+  height: 100vh;
 }
 
 .profile_icons {
   flex: 1;
   min-height: 26rem;
-  height: 36rem;
+  height: 2rem;
   width: 160px;
   min-width: 120px;
   margin: 1rem;
@@ -88,10 +90,11 @@
 
 .profile_info {
   border: 1px solid black;
+  border-radius: 20px;
   width: 88%;
   min-width: 800px;
   min-height: 26rem;
-  height: 34rem;
+  height: 2rem;
   margin: 1rem;
   padding: 1rem;
 }
@@ -157,4 +160,14 @@
 
   position: relative;
   z-index: 2;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.transaction_history::-webkit-scrollbar {
+  display: none;
+}
+
+.sold_history::-webkit-scrollbar {
+  display: none;
 }
