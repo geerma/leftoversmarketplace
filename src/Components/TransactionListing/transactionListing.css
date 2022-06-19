@@ -1,23 +1,25 @@
 .transactionlisting_box {
-  margin: 2rem;
-  background: #d9d9d9;
+  margin: 1rem;
+  background: #5eb872;
   border-radius: 10px;
 }
 
 .transactionimage_box {
   background: #ffffff;
   margin: 1rem;
-  padding: 1rem;
-  min-width: 120px;
-  min-height: 120px;
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+  min-width: 80px;
+  min-height: 85px;
 }
 
 .transactionlisting_box p {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 28px;
   text-align: center;
   color: #000000;
-  margin: 1rem;
+  margin: 0rem;
 }

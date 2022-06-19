@@ -45,18 +45,18 @@
 
 .profile_box {
   border: 1px solid black;
-  margin: 5rem 10rem 10rem;
+  margin: 2rem 9rem 9rem;
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  min-width: 350px;
+  min-width: 1050px;
+  background: white;
 }
 
 .profile_icons {
-  border: 1px solid black;
   flex: 1;
   min-height: 26rem;
-  height: 40rem;
+  height: 36rem;
   width: 160px;
   min-width: 120px;
   margin: 1rem;
@@ -68,12 +68,13 @@
 }
 
 .profile_icons button {
-  margin-top: 0rem;
+  margin-top: 0.2rem;
   padding: 1rem;
   background-color: #d9d9d9;
   cursor: pointer;
   border: none;
   outline: none;
+  border-radius: 20px;
 }
 
 .profile_icons button:hover {
@@ -87,24 +88,24 @@
 
 .profile_info {
   border: 1px solid black;
-  height: 50vh;
   width: 88%;
-  min-width: 200px;
-  margin: 1rem;
+  min-width: 800px;
   min-height: 26rem;
-  height: 40rem;
+  height: 34rem;
   margin: 1rem;
+  padding: 1rem;
 }
 
 .profile_info h1 {
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 
   color: #000000;
 
   margin-left: 4rem;
+  margin-top: 0.5rem;
 }
 
 /* Right side of Profile */
@@ -134,12 +135,24 @@
   margin-top: 6rem;
 }
 
+.transaction_history_container h1 {
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+
+.transaction_history_container h2 {
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
 .transaction_history,
 .sold_history {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-left: 2rem;
 
   position: relative;

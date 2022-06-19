@@ -76,8 +76,9 @@ const TransactionHistory = () => {
   ]);
 
   return (
-    <div>
+    <div className="transaction_history_container">
       <h1>Transaction History</h1>
+      <h2>Purchased</h2>
       <div className="transaction_history">
         {transaction.map((item, index) => (
           <TransactionListing
@@ -86,8 +87,8 @@ const TransactionHistory = () => {
             key={item.text + index}
           />
         ))}
-        ;
       </div>
+      <h2>Sold</h2>
       <div className="sold_history">
       {transaction.map((item, index) => (
           <TransactionListing
@@ -96,7 +97,6 @@ const TransactionHistory = () => {
             key={item.text + index}
           />
         ))}
-        ;
       </div>
     </div>
   );
