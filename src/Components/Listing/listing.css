@@ -1,12 +1,15 @@
 .listing_box {
   margin: 2rem;
-  background: #d9d9d9;
+  background: #EEE5D4;;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .image_box {
   background: #ffffff;
+  background-image: url("../../Assets/onion.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 1rem;
   padding: 1rem;
   min-width: 120px;

@@ -13,13 +13,20 @@
 }
 
 .list_button button {
-  background: #cccccc;
+  background: #DEFF97;
   border-radius: 30px;
-  padding: 1rem;
+ 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+ 
   display: flex;
   flex-direction: row;
   margin-top: 1.5rem;
-  margin-left: 75vw;
+  margin-left: 81vw;
+ 
+  cursor: pointer;
 }
 
 .recently_listed_container,
@@ -59,7 +66,7 @@
   text-align: left;
   z-index: 1;
   width: 250px;
-  margin-top: 68rem;
+  margin-top: 65rem;
   margin-left: 18rem;
 }
 
@@ -74,5 +81,5 @@
 .homepage_container img:nth-child(3) {
   width: 300px;
   margin-top: 46rem;
-  margin-left: 57rem;
+  margin-left: 40rem;
 }
