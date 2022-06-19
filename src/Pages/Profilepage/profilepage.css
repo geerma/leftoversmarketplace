@@ -52,13 +52,12 @@
   flex-direction: row;
   min-width: 1050px;
   background: white;
-  height: 100vh;
+  height: 70vh;
 }
 
 .profile_icons {
   flex: 1;
-  min-height: 26rem;
-  height: 2rem;
+  min-height: 30rem;
   width: 160px;
   min-width: 120px;
   margin: 1rem;
@@ -93,8 +92,7 @@
   border-radius: 20px;
   width: 88%;
   min-width: 800px;
-  min-height: 26rem;
-  height: 2rem;
+  min-height: 34rem;
   margin: 1rem;
   padding: 1rem;
 }
@@ -129,9 +127,19 @@
   flex-direction: row;
 }
 
+.profile_top_text h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
 .profile_top_text h3 {
-  margin-left: 24rem;
-  padding-bottom: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  margin-left: 20rem;
 }
 
 .profile_bottom_text {
@@ -179,4 +187,40 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom;
+}
+
+.conversation_page h1 {
+  margin-left: 9rem;
+}
+
+.settings_container {
+  border-radius: 20px;
+  min-width: 750px;
+  min-height: 32rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.settings_container button {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  line-height: 18px;
+  border: 0;
+  margin: 1rem 1rem;
+  margin-left: 3rem;
+  cursor: pointer;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  background: #be3838;
+  border-radius: 10px;
+}
+
+.settings_container button:nth-child(2) {
+  background: rgb(34, 160, 34);
 }

@@ -6,12 +6,15 @@
 
 .transactionimage_box {
   background: #ffffff;
+  background-image: url("../../Assets/donut.png");
+  background-size: contain;
+  background-repeat: cover;
   margin: 1rem;
   padding: 0.5rem;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 70px;
   min-width: 80px;
-  min-height: 85px;
+  min-height: 70px;
 }
 
 .transactionlisting_box p {
@@ -22,4 +25,5 @@
   text-align: center;
   color: #000000;
   margin: 0rem;
+  margin-bottom: 0.5rem;
 }

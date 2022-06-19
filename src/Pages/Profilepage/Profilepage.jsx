@@ -10,24 +10,7 @@ import settingsImage from "../../Assets/Profile/Settings.png";
 import convoImage from "../../Assets/Profile/chatpic.png";
 
 const Profile = () => {
-  const [sold, setSold] = useState([
-    {
-      image: "Image",
-      item_name: "Text1",
-    },
-    {
-      image: "Image",
-      item_name: "Text2",
-    },
-    {
-      image: "Image",
-      item_name: "Text3",
-    },
-    {
-      image: "Image",
-      item_name: "Text4",
-    },
-  ]);
+
 
   return (
     <div className="profile_menu">
@@ -38,9 +21,6 @@ const Profile = () => {
         <div className="profile_top_text">
           <h2>August Young</h2>
           <h3>4.8 Stars</h3>
-        </div>
-        <div className="profile_bottom_text">
-          <p>Based in California</p>
         </div>
       </div>
     </div>
@@ -75,6 +55,25 @@ const TransactionHistory = () => {
     },
   ]);
 
+  const [sold, setSold] = useState([
+    {
+      image: "Image",
+      item_name: "Sold 1",
+    },
+    {
+      image: "Image",
+      item_name: "Sold 2",
+    },
+    {
+      image: "Image",
+      item_name: "Sold 3",
+    },
+    {
+      image: "Image",
+      item_name: "Sold 4",
+    },
+  ]);
+
   return (
     <div className="transaction_history_container">
       <h1>Transaction History</h1>
@@ -90,7 +89,7 @@ const TransactionHistory = () => {
       </div>
       <h2>Sold</h2>
       <div className="sold_history">
-      {transaction.map((item, index) => (
+      {sold.map((item, index) => (
           <TransactionListing
             image={item.image}
             item_name={item.item_name}
@@ -104,8 +103,10 @@ const TransactionHistory = () => {
 
 const Settings = () => {
   return (
-    <div>
+    <div className="settings_container">
       <h1>Settings</h1>
+      <button>Verify your Profile</button>
+      <button>Report a User for Abuse</button>
     </div>
   );
 };

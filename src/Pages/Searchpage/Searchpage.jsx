@@ -63,6 +63,9 @@ const Searchpage = () => {
           <button onClick={() => setFilter((filterToggle) => !filterToggle)}>
             Filter
           </button>
+          <button>
+            Submit
+          </button>
         </div>
         <div className="filter">
           {filter && <FilterComponent />}
