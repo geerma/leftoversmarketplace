@@ -6,6 +6,8 @@ const asyncHandler = require('express-async-handler')
 
 
 let secret="secret123"
+
+
 const generateToken=(id)=>{
     return jwt.sign({id},secret,{expiresIn:'30d'})
 }
@@ -22,45 +24,48 @@ const getAllUsers = async (req, res)=>{
 
 
 const getUser= async (req, res)=>{
-    let id=req.body.id
-    try {
-        const user=await User.findById(id)
-        if(user==null){
-            res.status(404).json({message:"User does not exist"})
-        }
-        res.status(200).json(user)
-    } catch (error) {
-        res.status(500).json({message: error.message})
+    const {email} = req.body
+    const user= await User.findOne({email})
+    if(user){
+        res.status(200).json({
+            username:user.username,
+            email:user.email,
+            password:user.password,
+            message: "User Found!"})
+    }else{
+        res.status(400)
+        throw new Error('User not found')
     }
 }
 
-// const createUser = async (req, res)=>{
 
 
-//     try {
-//         const user= new User({
-//             username: req.body.username,
-//             password: req.body.password,
-//             firstName: req.body.firstName,
-//             lastName: req.body.lastName
-//         })
-//         await user.save()
-//         res.status(200).json({message:"user created"})
-//     } catch (error) {
-//         res.status(400).json({messgae:error.message})
-//     }
-// }
+const editUser = asyncHandler(async (req, res)=>{
+    const {username,email} = req.body
+    const user= await User.findOneAndUpdate({username,email})
+    if(user){
+        res.status(200).json({
+            username:user.username,
+            email:user.email,
+            password:user.password,
+            message: "User updated"})
+    }else{
+        res.status(400)
+        throw new Error('User not found')
+    }
+})
 
 
-
-const editUser = (req, res)=>{
-    res.status(200).json({message:`update user ${req.params.id}`})
-}
-
-
-const deleteUser = (req, res)=>{
-    res.status(200).json({message:`delete user ${req.params.id}`})
-}
+const deleteUser = asyncHandler(async (req, res)=>{
+    const {username} = req.body
+    const user= await User.findOneAndDelete({username})
+    if(user){
+        res.status(200).json({message: "deletion completed"})
+    }else{
+        res.status(400)
+        throw new Error('Invalid deletion')
+    }}
+)
 
 
 const loginUser = asyncHandler(async (req, res)=>{
@@ -79,8 +84,7 @@ const loginUser = asyncHandler(async (req, res)=>{
 
 
 const getMe= asyncHandler(async (req,res)=>{
-    res.json({message:"user data disopkayed"})
-
+    res.json({message:"user data displayed"})
 })
 
 

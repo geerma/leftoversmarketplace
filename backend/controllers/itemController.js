@@ -14,6 +14,26 @@ const getAllItems = async (req, res)=>{
 
 
 // price:{type: String, default:"0.0"},
+//     expirationDate: {type:Date, default:Date.now},
+//     nameOfItem: {type: String},
+//     description: {type: String},
+//     ingredients_allergens: {type: String},
+//     itemCreationDate: {type:Date, default:Date.now},
+
+const getItem= async (req, res)=>{
+    const {nameOfItem} = req.body
+    const item= await Item.findOne({nameOfItem})
+    if(item){
+        res.status(200).json({
+            message: "Item Found!"})
+    }else{
+        res.status(400)
+        throw new Error('Item not found')
+    }
+}
+
+
+// price:{type: String, default:"0.0"},
 // expirationDate: {type:Date, default:Date.now},
 // nameOfItem: {type: String},
 // description: {type: String},
@@ -62,5 +82,5 @@ const deleteItem=asyncHandler( async (req,res)=>{
 
 
 module.exports={
-    getAllItems,uploadItem,deleteItem
+    getAllItems,getItem,uploadItem,deleteItem
 }
