@@ -47,7 +47,7 @@ const Homepage = () => {
       <img src={lettuce} alt="lettuce" />
       <img src={bread} alt="bread" />
       <div className="list_button">
-      <button  onClick={() => navigate("/listingpage")}>List an item</button>
+        <button onClick={() => navigate("/listingpage")}>List an item</button>
       </div>
       <h1>Recently Listed:</h1>
       <div className="recently_listed_container">
@@ -55,7 +55,7 @@ const Homepage = () => {
           <Listing
             image={item.image}
             item_name={item.item_name}
-            key={item.text + index}
+            key={item.item_name + index}
           />
         ))}
       </div>
@@ -65,7 +65,7 @@ const Homepage = () => {
           <Listing
             image={item.image}
             item_name={item.item_name}
-            key={item.text + index}
+            key={item.item_name + index}
           />
         ))}
       </div>
@@ -75,7 +75,7 @@ const Homepage = () => {
           <Listing
             image={item.image}
             item_name={item.item_name}
-            key={item.text + index}
+            key={item.item_name + index}
           />
         ))}
       </div>
@@ -85,7 +85,7 @@ const Homepage = () => {
           <Listing
             image={item.image}
             item_name={item.item_name}
-            key={item.text + index}
+            key={item.item_name + index}
           />
         ))}
       </div>
