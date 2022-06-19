@@ -39,13 +39,66 @@
 }
 
 .search_inner_functions button {
-  background: #656565;
+  background: #F5D68F;
   border-radius: 30px;
+  border: none;
+  color: black;
+
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
-  color: white;
+  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   cursor: pointer;
 }
+
+.filter {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  margin-left: 57%;
+  margin-right: 20%;
+}
+
+.filter_checkboxes label, input{
+  display: flex;
+}
+
+.filter_checkboxes input {
+  width: 20px;
+  height: 28px;
+}
+
+.filter_slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter_slider input {
+  width: 80%;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider input[type=”range”]::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  width:30px;
+  height:30px;
+  background:#fcfcfc;
+  border:2px solid #7E6D57;
+  border-radius:50%;
+  cursor:pointer;
+ }
