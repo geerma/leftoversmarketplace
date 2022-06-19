@@ -14,7 +14,10 @@ const port = process.env.PORT||8095
 app.use(cors())
 app.use(express.json())
 
-app.use('/api',require('./routes/routes'))
+const home=require("./routes/home")
+const allroutes=require("./routes/routes")
+app.use("/home",home)
+app.use('/api',allroutes)
 
 
 
