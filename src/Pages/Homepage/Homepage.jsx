@@ -14,27 +14,27 @@ const Homepage = () => {
   const [list, setList] = useState([
     {
       image: "Image",
-      item_name: "Text1",
+      item_name: "Onion",
     },
     {
       image: "Image",
-      item_name: "Text2",
+      item_name: "Onion",
     },
     {
       image: "Image",
-      item_name: "Text3",
+      item_name: "Onion",
     },
     {
       image: "Image",
-      item_name: "Text4",
+      item_name: "Onion",
     },
     {
       image: "Image",
-      item_name: "Text5",
+      item_name: "Onion",
     },
     {
       image: "Image",
-      item_name: "Text6",
+      item_name: "Onion",
     },
   ]);
 
