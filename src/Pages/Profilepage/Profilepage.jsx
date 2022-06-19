@@ -7,6 +7,7 @@ import profileImageLarge from "../../Assets/Profile/ProfileLarge.png";
 import chatImage from "../../Assets/Profile/Chat.png";
 import historyImage from "../../Assets/Profile/History.png";
 import settingsImage from "../../Assets/Profile/Settings.png";
+import convoImage from "../../Assets/Profile/chatpic.png";
 
 const Profile = () => {
   const [sold, setSold] = useState([
@@ -48,7 +49,7 @@ const Profile = () => {
 
 const Chats = () => {
   return (
-    <div>
+    <div className="conversation_page">
       <h1>Chats</h1>
     </div>
   );

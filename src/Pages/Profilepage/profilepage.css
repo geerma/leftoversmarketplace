@@ -171,3 +171,11 @@
 .sold_history::-webkit-scrollbar {
   display: none;
 }
+
+.conversation_page {
+  height: 90%;
+  background-image: url("../../Assets/Profile/chatpic.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+}
