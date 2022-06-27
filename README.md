@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Leftovers Marketplace
 
 Welcome to Leftovers Marketplace. This project was submitted to WaffleHacks 2022.
 
