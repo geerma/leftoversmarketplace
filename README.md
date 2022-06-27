@@ -1,17 +1,16 @@
 # Getting Started with Create React App
 
-Welcome to Leftover Marketplace. This is our project for WaffleHacks 2022.
+Welcome to Leftovers Marketplace. This project was submitted to WaffleHacks 2022.
 
 ## Links
 
-[Presentation and Demo Video](https://www.youtube.com/watch?v=rqwe0tU2Bxk&t=2s)
+[Presentation and Demo Video](https://www.youtube.com/watch?v=rqwe0tU2Bxk&)
 
 [Website Link](http://leftoversmarketplace.vercel.app)
 
-[Figma](https://www.figma.com/proto/KzBJI5KVgSs5lJvB1Guhx3/Left-Overs?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A2)
+[Figma Design](https://www.figma.com/proto/KzBJI5KVgSs5lJvB1Guhx3/Left-Overs?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A2)
 
-## How to Run
-Type in npm install, and install any necessaries dependencies such as React and react-router-dom. Then type 'npm start' in the terminal.
+[Devpost](https://devpost.com/software/leftovers-marketplace)
 
 ## Inspiration
 
@@ -29,7 +28,7 @@ We also had plans to create a marketplace where people can list Music/Art for sa
 
 ## How we built it
 
-We created a cozy-themed design using Figma, which was used in the creation of our Front-End, and that was made using React (along with HTML, CSS, and JavaScript). The bank-end was created using MongoDB. Finally, the website was deployed onto Vercel, which we managed to get it linked up to our domain name: http://www.leftoversmarketplace.tech/
+We created a cozy-themed design using Figma, which was used in the creation of our Front-End, and that was made using React (along with HTML, CSS, and JavaScript). The bank-end was created using MongoDB. Finally, the website was deployed onto Vercel.
 
 ## Challenges we ran into
 
@@ -46,3 +45,7 @@ We learned how to transfer Figma design styles to a React Front-end. We also pai
 ## What's next for Leftovers Marketplace
 
 There are many features that we had for our project that we were not able to implement. Mainly connecting the front-end with a functional back-end is the biggest one. We would also like to implement Google Maps API for location searching and SocketIO for the chat functionality, and Twilio for text messaging. In addition, we wanted to create a marketplace where users can sell art/music, and then vendors who donate leftovers can receive points that will work towards a discount.
+
+## How to Run
+
+Type 'npm install', and install any necessaries dependencies such as React and react-router-dom. Then type 'npm start' in the terminal.
