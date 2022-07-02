@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Welcomepage = () => {
   const register_URL =
-    "http://node-env.eba-r8dt86gf.us-east-1.elasticbeanstalk.com/api/users/register";
+    "https://node-env.eba-r8dt86gf.us-east-1.elasticbeanstalk.com/api/users/register";
 
   const [registering, setRegistering] = useState(false);
   const [username, setUsername] = useState("");
