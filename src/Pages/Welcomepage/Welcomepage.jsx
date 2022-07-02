@@ -5,14 +5,36 @@ import { Header } from "../../Components";
 import { useState } from "react";
 
 const Welcomepage = () => {
+  const register_URL =
+    "http://node-env.eba-r8dt86gf.us-east-1.elasticbeanstalk.com/api/users/register";
+
   const [registering, setRegistering] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [registerInfo, setRegisterInfo] = useState({
-    username: "",
-    email: "",
-    password: "",
+    usernameregister: "",
+    emailregister: "",
+    passwordregister: "",
   });
+
+  const handleRegisterSubmit = () => {
+    fetch(`${register_URL}`, {
+      method: "POST",
+      body: JSON.stringify({
+        username: registerInfo.usernameregister,
+        email: registerInfo.emailregister,
+        password: registerInfo.passwordregister,
+        firstName: "first",
+        lastname: "last",
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+  };
 
   return (
     <div className="welcome_container">
@@ -25,34 +47,49 @@ const Welcomepage = () => {
           <div className="register_container">
             Registration
             <input
-              type="username"
+              type="username-register"
               placeholder="Username"
-              onChange={(e) => setRegisterInfo.username(e.target.value)}
+              onChange={(e) =>
+                setRegisterInfo((prevState) => ({
+                  ...prevState,
+                  usernameregister: e.target.value,
+                }))
+              }
             />
             <input
-              type="email"
+              type="email-register"
               placeholder="Email"
-              onChange={(e) => setRegisterInfo.email(e.target.value)}
+              onChange={(e) =>
+                setRegisterInfo((prevState) => ({
+                  ...prevState,
+                  emailregister: e.target.value,
+                }))
+              }
             />
             <input
-              type="password"
+              type="password-register"
               placeholder="Password"
-              onChange={(e) => setRegisterInfo.password(e.target.value)}
+              onChange={(e) =>
+                setRegisterInfo((prevState) => ({
+                  ...prevState,
+                  passwordregister: e.target.value,
+                }))
+              }
             />
-            <button onClick={() => console.log("Submit")}>Submit</button>
+            <button onClick={() => handleRegisterSubmit()}>Submit</button>
             <button onClick={() => setRegistering(false)}>Back</button>
           </div>
         ) : (
           <div className="login_container">
             Login
             <input
-              type="username"
+              type="username-login"
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
             <input
-              type="password"
+              type="password-login"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
