@@ -3,13 +3,14 @@ import "./welcomepage.css";
 
 import { Header } from "../../Components";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Welcomepage = () => {
-  const register_URL =
-    "https://leftoverbackend.herokuapp.com/api/users/register";
+  const backend_URL = "https://leftoverbackend.herokuapp.com";
 
+  const navigate = useNavigate();
   const [registering, setRegistering] = useState(false);
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [registerInfo, setRegisterInfo] = useState({
     usernameregister: "",
@@ -18,9 +19,9 @@ const Welcomepage = () => {
   });
 
   const handleRegisterSubmit = () => {
-    console.log(registerInfo.usernameregister)
+    console.log(registerInfo.usernameregister);
 
-    fetch(`${register_URL}`, {
+    fetch(`${backend_URL}/api/users/register`, {
       method: "POST",
       body: JSON.stringify({
         username: registerInfo.usernameregister,
@@ -36,6 +37,31 @@ const Welcomepage = () => {
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(`${backend_URL}/api/users/login`, {
+      method: "POST",
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
+
+    const data = await response.json();
+    console.log(data);
+
+    if (data.token) {
+      alert("Logged In");
+      navigate("/homepage");
+    } else {
+      alert("Please check login credidentials");
+    }
   };
 
   return (
@@ -85,10 +111,10 @@ const Welcomepage = () => {
           <div className="login_container">
             Login
             <input
-              type="username-login"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              type="emaikl-login"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password-login"
@@ -96,7 +122,7 @@ const Welcomepage = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={() => console.log("Log In")}>Login</button>
+            <button onClick={(e) => handleLogin(e)}>Login</button>
             <button onClick={() => setRegistering(true)}>Register</button>
           </div>
         )}
