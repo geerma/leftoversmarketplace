@@ -64,6 +64,12 @@ const Welcomepage = () => {
     }
   };
 
+  const registerClick = () => {
+    setRegistering(!registering);
+    setEmail("");
+    setPassword("");
+  };
+
   return (
     <div className="welcome_container">
       <div>
@@ -75,17 +81,7 @@ const Welcomepage = () => {
           <div className="register_container">
             Registration
             <input
-              type="username-register"
-              placeholder="Username"
-              onChange={(e) =>
-                setRegisterInfo((prevState) => ({
-                  ...prevState,
-                  usernameregister: e.target.value,
-                }))
-              }
-            />
-            <input
-              type="email-register"
+              type="email"
               placeholder="Email"
               onChange={(e) =>
                 setRegisterInfo((prevState) => ({
@@ -95,7 +91,7 @@ const Welcomepage = () => {
               }
             />
             <input
-              type="password-register"
+              type="password"
               placeholder="Password"
               onChange={(e) =>
                 setRegisterInfo((prevState) => ({
@@ -104,26 +100,36 @@ const Welcomepage = () => {
                 }))
               }
             />
+            <input
+              type="text"
+              placeholder="Username"
+              onChange={(e) =>
+                setRegisterInfo((prevState) => ({
+                  ...prevState,
+                  usernameregister: e.target.value,
+                }))
+              }
+            />
             <button onClick={() => handleRegisterSubmit()}>Submit</button>
-            <button onClick={() => setRegistering(false)}>Back</button>
+            <button onClick={() => registerClick()}>Back</button>
           </div>
         ) : (
           <div className="login_container">
             Login
             <input
-              type="emaikl-login"
+              type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
-              type="password-login"
+              type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <button onClick={(e) => handleLogin(e)}>Login</button>
-            <button onClick={() => setRegistering(true)}>Register</button>
+            <button onClick={() => registerClick()}>Register</button>
           </div>
         )}
       </div>
