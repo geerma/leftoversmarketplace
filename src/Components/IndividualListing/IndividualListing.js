@@ -2,7 +2,7 @@ import React from "react";
 import "./individuallisting.css";
 import { useNavigate } from "react-router-dom";
 
-const IndividualListing = ({ image, item_name }) => {
+const IndividualListing = ({ image, item_name, item_description }) => {
   const navigate = useNavigate();
 
   return (

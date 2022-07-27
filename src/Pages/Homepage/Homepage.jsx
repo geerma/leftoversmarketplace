@@ -10,6 +10,8 @@ import bread from "../../Assets/bread.png";
 import lettuce from "../../Assets/lettuce.png";
 
 const Homepage = () => {
+  const backend_URL = "https://leftoverbackend.herokuapp.com";
+
   const navigate = useNavigate();
   const [list, setList] = useState([
     {
@@ -38,10 +40,33 @@ const Homepage = () => {
     },
   ]);
 
+  const [post, setPost] = useState([]);
+
+  const fetchData = async () => {
+    await fetch(`${backend_URL}/api/posts/getAllPost`, {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => setPost(data))
+      .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="homepage_container">
       <div>
         <Header />
+        <button
+          onClick={() => {
+            console.log(post);
+          }}
+        ></button>
       </div>
       <img src={tomato} alt="tomato" />
       <img src={lettuce} alt="lettuce" />
@@ -51,33 +76,36 @@ const Homepage = () => {
       </div>
       <h1>Recently Listed:</h1>
       <div className="recently_listed_container">
-        {list.map((item, index) => (
-          <Listing
-            image={item.image}
-            item_name={item.item_name}
-            key={item.item_name + index}
-          />
-        ))}
+        {post &&
+          post
+            .slice(0, 5)
+            .map((item, index) => (
+              <Listing 
+              image={item.pictureURL} 
+              item_name={item.name} 
+              item_description={item.description}
+              item_type = {item.itemType}
+              item_price = {item.price}
+              key={index} />
+            ))}
       </div>
       <h1>Closest to You:</h1>
       <div className="closest_container">
-        {list.map((item, index) => (
-          <Listing
-            image={item.image}
-            item_name={item.item_name}
-            key={item.item_name + index}
-          />
-        ))}
+        {post &&
+          post
+            .slice(0, 5)
+            .map((item, index) => (
+              <Listing image="Image" item_name={item.name} key={index} />
+            ))}
       </div>
       <h1>Fresh Produce:</h1>
       <div className="fresh_produce_container">
-        {list.map((item, index) => (
-          <Listing
-            image={item.image}
-            item_name={item.item_name}
-            key={item.item_name + index}
-          />
-        ))}
+        {post &&
+          post
+            .slice(0, 5)
+            .map((item, index) => (
+              <Listing image="Image" item_name={item.name} key={index} />
+            ))}
       </div>
       <h1>Pantry Friendly:</h1>
       <div className="pantry_friendly_container">
