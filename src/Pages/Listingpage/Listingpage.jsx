@@ -3,7 +3,7 @@ import "./listingpage.css";
 import { Header } from "../../Components";
 
 const Listingpage = () => {
-  const backend_URL = "https://leftoverbackend.herokuapp.com";
+  const backend_URL = "https://leftoversmarketplace-kvkbegmcvq-uw.a.run.app";
 
   const [postInfo, setPostInfo] = useState({
     userId: "Default User ID",

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Welcomepage = () => {
-  const backend_URL = "https://leftoverbackend.herokuapp.com";
+  const backend_URL = "https://leftoversmarketplace-kvkbegmcvq-uw.a.run.app";
 
   const navigate = useNavigate();
   const [registering, setRegistering] = useState(false);

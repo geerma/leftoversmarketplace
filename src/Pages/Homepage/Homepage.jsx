@@ -10,7 +10,7 @@ import bread from "../../Assets/bread.png";
 import lettuce from "../../Assets/lettuce.png";
 
 const Homepage = () => {
-  const backend_URL = "https://leftoverbackend.herokuapp.com";
+  const backend_URL = "https://leftoversmarketplace-kvkbegmcvq-uw.a.run.app";
 
   const navigate = useNavigate();
   const [list, setList] = useState([

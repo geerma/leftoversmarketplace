@@ -1,27 +1,52 @@
-const express = require('express')
-const colors = require('colors')
-const cors = require('cors')
-const connectDB= require('./config/db')
+const express = require("express");
+const colors = require("colors");
+const cors = require("cors");
+const helmet = require("helmet");
+const morgan = require("morgan");
 
-require('dotenv').config()
+const multer = require("multer");
 
-connectDB()
+const connectDB = require("./config/db");
 
-const app = express()
+require("dotenv").config();
 
-const port = process.env.PORT||8095
+connectDB();
 
-app.use(cors())
-app.use(express.json())
+const app = express();
 
-const home=require("./routes/home")
-const allroutes=require("./routes/routes")
-app.use("/home",home)
-app.use('/api',allroutes)
+app.use(cors());
+app.use(express.json());
+app.use(helmet());
+app.use(morgan("common"));
+app.set("view engine", "ejs");
 
+const home = require("./routes/home");
+const allroutes = require("./routes/routes");
+app.use("/", home);
+app.use("/api", allroutes);
 
+// app.use("/images", express.static(path.join(__dirname, "public/images")));
 
-app.listen(port, ()=>{
-    console.log(`Server started on port ${port}`)
-})
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     cb(null, "public/images");
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, req.body.name);
+//   },
+// });
 
+// const upload = multer({ storage: storage });
+// app.post("/api/upload", upload.single("file"), (req, res) => {
+//   try {
+//     return res.status(200).json("File uploded successfully");
+//   } catch (error) {
+//     console.error(error);
+//   }
+// });
+
+const port = 8080;
+
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
